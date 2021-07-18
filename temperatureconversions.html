@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+
+    <link rel = "stylesheet" href = "style.css">
+    <script src = "script.js"></script>
+
+    <style>
+
+      body {
+        background-image: linear-gradient(yellow, red);
+        height: 600px;
+        overflow: hidden;
+      }
+
+    </style>
+
+    <title>Temperature Conversions</title>
+  </head>
+  <body>
+
+        <div id = "converstion-inputs">
+
+          <input type = "text" placeholder = "Temperature" class = "temperature" id = "input01">
+          <select id="temperatures">
+          <option value="Fahrenheit">Fahrenheit (°F)</option>
+          <option value="Celsius">Celsius (°C)</option>
+          <option value="Kelvin">Kelvin (°K)</option>
+          </select>
+          <br>
+          <br>
+          <br>
+          <br>
+          <label><b>FARENHEIT:</b></label><input type = "text" placeholder = "Fahrenheit (°F)" class = "temperature" id = "Fahrenheit">
+          <br>
+          <br>
+          <label><b>CELSIUS:</b><input type = "text" placeholder = "Celsius (°C)" class = "temperature" id = "Celsius">
+          <br>
+          <br>
+          <label><b>KELVIN:</b><input type = "text" placeholder = "Kelvin (°K)" class = "temperature" id = "Kelvin">
+          <br>
+          <br>
+          <input type = "button" value = "CALCULATE" onClick = "calculate()">
+        </div>
+
+
+  </body>
+</html>

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+
+    <link rel = "stylesheet" href = "style.css">
+    <script src = "script.js"></script>
+
+    <meta charset="utf-8">
+
+    <title>Calculator</title>
+
+
+  </head>
+
+  <body>
+
+    <a href = "calculator.html"><font color = "purple"> Click here to see the other calculator!</font></a>
+    <a href = "temperatureconversions.html"><font color = "black"> Click here to visit the temperature conversions site!</font></a>
+    <a href = "distanceconversions.html"><font color = "green"> Click here to visit the distance converstion site!</font></a>
+
+
+
+<div id = "calculator">
+
+  <form name = "clearConsole">
+    <input type = "text" id = "input" placeholder = "0" name = "display">
+
+    <br>
+      <input type = "button" name = "1" class = "number-pad" id = "numbers" value = "1" onclick = "clearConsole.display.value += '1'">
+      <input type = "button" name = "2" class = "number-pad" id = "numbers" value = "2" onclick = "clearConsole.display.value += '2'">
+      <input type = "button" name = "3" class = "number-pad" id = "numbers" value = "3" onclick = "clearConsole.display.value += '3'">
+      <input type = "button" name = "4" class = "number-pad" id = "numbers" value = "4" onclick = "clearConsole.display.value += '4'">
+      <input type = "button" name = "add" class = "number-pad" id = "operations" value = "+" onclick = "clearConsole.display.value += '+'">
+      <input type = "button" name = "subtract" class = "number-pad" id = "operations" value = "-" onclick = "clearConsole.display.value += '-'">
+      <br>
+      <input type = "button" name = "5" class = "number-pad" id = "numbers" value = "5" onclick = "clearConsole.display.value += '5'">
+      <input type = "button" name = "6" class = "number-pad" id = "numbers" value = "6" onclick = "clearConsole.display.value += '6'">
+      <input type = "button" name = "7" class = "number-pad" id = "numbers" value = "7" onclick = "clearConsole.display.value += '7'">
+      <input type = "button" name = "8" class = "number-pad" id = "numbers" value = "8" onclick = "clearConsole.display.value += '8'">
+      <input type = "button" name = "multiply" class = "number-pad" id = "operations" value = "x" onclick = "clearConsole.display.value += '*'">
+      <input type = "button" name = "divide" class = "number-pad" id = "operations" value = "÷" onclick = "clearConsole.display.value += '/'">
+      <br>
+      <input type = "button" name = "9" class = "number-pad" id = "numbers" value = "9" onclick = "clearConsole.display.value += '9'">
+      <input type = "button" name = "0" class = "number-pad" id = "numbers" value = "0" onclick = "clearConsole.display.value += '0'">
+      <input type = "button" name = "decimal" class = "number-pad" id = "symbols" value = "." onclick = "clearConsole.display.value += '.'">
+      <input type = "button" name = "negative" class = "number-pad" id = "symbols" value = "+/-" onclick = "clearConsole.display.value += '-'">
+      <button onClick = clear() class = "number-pad" id = "clear-button">C</button>
+      <input type="button" name="doit" class = "number-pad" value="=" onclick="clearConsole.display.value = eval(clearConsole.display.value)" id = "equals-button">
+      </form>
+   </div>
+
+
+
+
+
+
+
+
+
+
+  </body>
+
+</html>
